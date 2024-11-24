@@ -1,42 +1,161 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Veículo de mídia indepentende. Notícias contra-hegemônicas.">
+    <meta name="keywords" content="Mídia Independente, jornalismo independete, jornalismo crítico">
+    <meta name="author" content="Imprensa Popular">
+    <meta property="og:title" content="Imprensa Popular">
+    <meta property="og:description" content="Seu veículo de imprensa independente">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Imprensa Popular">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
     <title>Document</title>
     <LINK rel=STYLESHEET href="css/estilo.css">
 </head>
+
 <body>
-    <header>
-        <h1>Imprensa Popular</h1>
+
+    <header class="header">
+        <h1><a href="#">Imprensa Popular</a></h1>
         <p>Pra sair de cima do muro</p>   
     </header>
+
     <nav>
-       <ul>
-            <li class="menu"><a href="#">ECONOMIA-POLÍTICA</a></li>
-            <li class="menu"><a href="#">ESPORTES</a></li>
-            <li class="menu"><a href="#">CULTURA</a></li>
+       <ul class="menu">
+            <li><a href="#">ECONOMIA-POLÍTICA</a></li>
+            <li><a href="#">ESPORTES</a></li>
+            <li><a href="#">CULTURA</a></li>
        </ul>
     </nav>
+
+    <h1> Notícias </h1>
+
     <main>
-        <section>
-            <div class='imagens'></div>
+        <section class="noticia">
             <img src="imagens/queimadas.jpg" alt="queimadas">
-            <small>Reprodução: Pedro Ventura/Agencia Brasilia</small>
+            <p>Reprodução: Pedro Ventura/Agencia Brasilia</p>
             <h1> AS QUEIMADAS TEM O DNA DO AGRONEGÓCIO</h1>
             <p>O agronegócio é o principal responsável pelos incêndios no Brasil. Diretamente, com a concetração de focos de incêndios nas áreas de expansão agropecuária e nas pastagens. E, indiretamente, como setor que mais contribui para as mudanças climáticas no país. No entanto, ações do governo Lula-Alckmin, como o "bolsa-incêndio", beneficiam o setor, enquanto o Decreto 12.189/24, que aumenta as sanções para quem provocar incêndios, carece de aplicabilidade [...]</p>
             <p><a href="#">Leia a matéria completa!</a></p>
         </section>
-        <section>
+
+        <section class="noticia">
             <img src="imagens/bets.jpg" alt="bets">
-            <small>Reprodução/Foto: Joédson Alves/Agência Brasil.</small>
+            <p>Reprodução/Foto: Joédson Alves/Agência Brasil.</p>
             <h1> BETS CAUSAM ENDIVIDAMENTO NAS PERIFERIAS E LUCROS BILIONÁRIOS NA EUROPA</h1>
             <p>Uma pesquisa do Datafolha mostrou que 15% dos brasileiros já realizaram alguma aposta online. Entre os jovens, o percentual chega a 30%. O perfil do apostador brasileiro é de homens jovens, principalmente de menor renda. O Itaú realizou uma análise para investidores projetando um gasto líquido de R$ 23,9 bilhões em valores apostados no Brasil entre 2023 e 2024. Ao considerar o gasto líquido, já está sendo descontado o quanto esses apostadores recebem de volta. trata-se , portanto, do prejuízo dos apostadores. Essa soma representa 0,2% do PIB brasileiro e mais do que o dobro do investimento na atenção básica em 2023. [...]</p>
             <p><a href="#">Leia a matéria completa!</a></p>
         </section>
+
+        <h1>GALERIA</h1>
+
+        <section class="galeria">
+            
+            <div>
+                <a href="#"><img src="imagens/galeria1.jpg" alt="galeria1">
+                <p>Governo Federal não combate queimadas do agronegócio</p></a>
+            </div>
+            <div>
+                <a href="#"><img src="imagens/galeria2.jpg" alt="galeria2">
+                <p>Retiradade imposto sobre grandes fortunas prenuncia regressividade da reforma tributária</p></a>
+            </div>
+            <div>
+                <a href="#"><img src="imagens/galeria3.png" alt="galeria3">
+                <p>Decisão do STF, na prática, acaba come estabilidade no serviço público</p></a>
+            </div>
+            <div>
+                <a href="#"><img src="imagens/galeria4.png" alt="galeria4">
+                <p>Gravataí Shopping Center expande seus lucros às custas de jornadas de trabalho abusivas e salários baixos</p></a>
+            </div>
+            <div>
+                <a href="#"><img src="imagens/galeria5.jpg" alt="galeria5">
+                <p>EBC corta salário de jornalistas que participaram das greves</p></a>
+            </div>
+            <div>
+                <a href="#"><img src="imagens/galeria6.jpg" alt="galeria6">
+                <p>Ataque ao STF por ex-candidato do PL acende alerta para possíveis imitadores</p></a>
+            </div>
+
+        </section>
+
+        <h1>FORMULÁRIO DE INSCRIÇÃO</h1>
+
+        <section class="secaoFormulario">
+
+            <div class="divFormulario">
+                
+                <form action="#" method="post">
+
+                    <fieldset>
+                        <legend> Contribua com o jornalismo independente </legend>
+                        
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+
+                        <label for="sobrenome">Sobrenome:</label>
+                        <input type="text" id="sobrenome" name="sobrenome" required>
+                        
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" pattern="[0-9]{10,11}" required>
+
+                        <label for="data_nascimento">Data de Nascimento:</label>
+                        <input type="date" id="data_nascimento" name="data_nascimento" required>
+
+                        <label>Gênero:</label>
+                        <div class="genero">
+                            <input type="radio" id="homem" name="genero" value="homem">
+                            <label for="homem">Homem</label>
+                        </div>
+
+                        <div class="genero">
+                            <input  type="radio" id="mulher" name="genero" value="mulher">
+                            <label for="mulher">Mulher</label>
+                        </div>
+
+                        <div class="genero">
+                            <input type="radio" id="outro" name="genero" value="outro">
+                            <label for="outro">Outro</label>
+                        </div>
+                        
+                        <div>
+                            <label for="regiao">Qual a região do país que você vive:</label>
+                            <select id="regiao" name="regiao" required>
+                                <option value="" disabled selected>Selecione uma opção</option>
+                                <option value="norte">Norte</option>
+                                <option value="nordeste">Nordeste</option>
+                                <option value="centro_oeste">Centro-Oeste</option>
+                                <option value="sudeste">Sudeste</option>
+                                <option value="sul">Sul</option>
+                                <option value="estrangeiro">Não moro no país</option>
+                            </select>
+                        </div>
+
+                        <button type="submit">Enviar</button>
+
+                    </fieldset>
+
+                </form>
+
+            </div>
+
+            <div class="imagemFormulario">
+                <img src="imagens/formulario.png" alt="ImagemFormulario">
+            </div>
+
+        </section>
+
     </main>
-    <footer>
+
+    <footer class="footer">
         <p> Imprensa Popular @ 2024 </p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
